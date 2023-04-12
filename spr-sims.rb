@@ -11,7 +11,7 @@ class SprSims < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/MichaelSims/spr/releases/download/v1.0.0-sims/spr_macos_arm64.tar.gz"
-      sha256 "50391e4a4b65309ebf11d76748afa6a521472e1485dc2127b00202efe102fcf7"
+      sha256 "a59f32b474146b9bb4637b88d788a17c38a0b2336c64d7d436845ae88ca84d72"
 
       def install
         bin.install "git-spr"
@@ -21,7 +21,7 @@ class SprSims < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/MichaelSims/spr/releases/download/v1.0.0-sims/spr_macos_x86_64.tar.gz"
-      sha256 "74af7611900876c3a85ac9527a23c3f2857cae62eac09a9cbcfd627fe3ad53ff"
+      sha256 "02b22b22ace3b4bd22d8251cff6015f5f7bb73cb6a78db2533199cb805965d60"
 
       def install
         bin.install "git-spr"
@@ -34,7 +34,7 @@ class SprSims < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/MichaelSims/spr/releases/download/v1.0.0-sims/spr_linux_arm64.tar.gz"
-      sha256 "bd7494314317d391f3185dec63a2e607158b795283d59f7dc5880a1c77ed59e7"
+      sha256 "fadd8aaee9ec689e3bc03487d8451efa5d108392fba4b9c3ee37da82972c33b5"
 
       def install
         bin.install "git-spr"
@@ -44,7 +44,7 @@ class SprSims < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/MichaelSims/spr/releases/download/v1.0.0-sims/spr_linux_x86_64.tar.gz"
-      sha256 "c39646dce8363a41d6d4bb931d34e40bc05b6845ab8843811146fcc4dfa8dbbd"
+      sha256 "fed64de6b45fc893fbcb43eb3ed19a54e7724e46cdd74f46fae6f15b3750f0e2"
 
       def install
         bin.install "git-spr"
