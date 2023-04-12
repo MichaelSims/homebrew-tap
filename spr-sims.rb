@@ -5,13 +5,13 @@
 class SprSims < Formula
   desc "Stacked Pull Requests on GitHub"
   homepage "https://github.com/MichaelSims/spr"
-  version "0.11.2-sims"
+  version "1.0.0-sims"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/MichaelSims/spr/releases/download/v0.11.2-sims/spr_macos_x86_64.tar.gz"
-      sha256 "91bd5a6a9c5e040ae5329ca63b5aaf50c95d6f22f4d354d9a37a5c593793d49d"
+    if Hardware::CPU.arm?
+      url "https://github.com/MichaelSims/spr/releases/download/v1.0.0-sims/spr_macos_arm64.tar.gz"
+      sha256 "50391e4a4b65309ebf11d76748afa6a521472e1485dc2127b00202efe102fcf7"
 
       def install
         bin.install "git-spr"
@@ -19,9 +19,9 @@ class SprSims < Formula
         bin.install "spr_reword_helper"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/MichaelSims/spr/releases/download/v0.11.2-sims/spr_macos_arm64.tar.gz"
-      sha256 "cdcbf0c24d41c02ca0f60c42fb59a3da04fcd8a06bd7fc0df2cb79fc5d527e24"
+    if Hardware::CPU.intel?
+      url "https://github.com/MichaelSims/spr/releases/download/v1.0.0-sims/spr_macos_x86_64.tar.gz"
+      sha256 "74af7611900876c3a85ac9527a23c3f2857cae62eac09a9cbcfd627fe3ad53ff"
 
       def install
         bin.install "git-spr"
@@ -33,8 +33,8 @@ class SprSims < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MichaelSims/spr/releases/download/v0.11.2-sims/spr_linux_arm64.tar.gz"
-      sha256 "fecc59a0a700c20a1309dce3732940d92fd1cc072cd95501976acc3565611b56"
+      url "https://github.com/MichaelSims/spr/releases/download/v1.0.0-sims/spr_linux_arm64.tar.gz"
+      sha256 "bd7494314317d391f3185dec63a2e607158b795283d59f7dc5880a1c77ed59e7"
 
       def install
         bin.install "git-spr"
@@ -43,8 +43,8 @@ class SprSims < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/MichaelSims/spr/releases/download/v0.11.2-sims/spr_linux_x86_64.tar.gz"
-      sha256 "8fe1bce103e2e6e41934ae24abe4c28eb7e1587630cdcfd98b26504f09627544"
+      url "https://github.com/MichaelSims/spr/releases/download/v1.0.0-sims/spr_linux_x86_64.tar.gz"
+      sha256 "c39646dce8363a41d6d4bb931d34e40bc05b6845ab8843811146fcc4dfa8dbbd"
 
       def install
         bin.install "git-spr"
