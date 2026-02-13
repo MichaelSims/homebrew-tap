@@ -1,36 +1,36 @@
 class Jaspr < Formula
   desc "Stacked pull requests on GitHub"
   homepage "https://github.com/MichaelSims/git-jaspr"
-  version "2.0-beta-2"
+  version "2.0-beta-3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.0-beta-2/jaspr-macos-arm64"
-      sha256 "24c2833f3fba8521c25979c0496e707483192eaa173273228132c9547bdbacf6"
+      url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.0-beta-3/jaspr-macos-arm64"
+      sha256 "7d67d825a94e8f0c451151b6cd39d88150f2415c6df70874b21c605361ba3788"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.0-beta-2/jaspr-linux-amd64"
-      sha256 "df8e9653227ee80d729184cab04f62fffe0fe80537c11aa999e3bea5000fc9bf"
+      url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.0-beta-3/jaspr-linux-amd64"
+      sha256 "5f85c1a35f3a037502a5978d8bfe0e5dfae7c13681c3ab87a664aadb1176197b"
     end
   end
 
   resource "bash_completion" do
-    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.0-beta-2/jaspr.bash"
-    sha256 "211335dcef1f8a20392222684389f4e3502af8234861526b0024ba34225bf4a2"
+    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.0-beta-3/jaspr.bash"
+    sha256 "e3805ff4e7b3d073e2a2a8c55d38a9e44e00a2a168c09fc2d4c596b84c72c49e"
   end
 
   resource "zsh_completion" do
-    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.0-beta-2/_jaspr"
-    sha256 "62fd4e24576b5cead24f08c9ff5c24d7ad5c33e64b899aaed10e81dc9a6d5ca7"
+    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.0-beta-3/_jaspr"
+    sha256 "60ebf500d76e2159b917f193bdba11d95841e6e488294692b0e61ac0a061c03c"
   end
 
   resource "fish_completion" do
-    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.0-beta-2/jaspr.fish"
-    sha256 "9cf536e92a9572d538ddbf0e64a0cd43e09e01a053eeda5337ad4798de555496"
+    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.0-beta-3/jaspr.fish"
+    sha256 "04c14ba012ed8efcbcc3e7ea0a4a694a5ea49c093e4afdd8ec5d24d883b76b38"
   end
 
   def install
