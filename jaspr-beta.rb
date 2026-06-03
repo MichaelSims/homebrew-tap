@@ -1,41 +1,41 @@
 class JasprBeta < Formula
   desc "Stacked pull requests on GitHub"
   homepage "https://github.com/MichaelSims/git-jaspr"
-  version "2.1.0-beta.2"
+  version "2.1.0-beta.3"
   license "Apache-2.0"
   conflicts_with "jaspr", because: "both install the jaspr binary"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.1.0-beta.2/jaspr-macos-arm64"
-      sha256 "a97fc1b90a1bc203deccf36bfa2ef238b94886b6e45adac2d72cf64ff2874963"
+      url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.1.0-beta.3/jaspr-macos-arm64"
+      sha256 "fa1e199b6dfb4fe685e2d5c3c711997988282819fdd2652d80865e53a051b35f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.1.0-beta.2/jaspr-linux-amd64"
-      sha256 "ba8b91a2ba4e194d4cdd52540c8451273634cf0c5b5182ff5124ecd82390ad3b"
+      url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.1.0-beta.3/jaspr-linux-amd64"
+      sha256 "dad0fdda148ef0d7980af4a0da82c97aab5ac1bdd1b970b0482d45bbb90a5b94"
     end
   end
 
   resource "bash_completion" do
-    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.1.0-beta.2/jaspr.bash"
+    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.1.0-beta.3/jaspr.bash"
     sha256 "b1021583c199afea83888c545085e7089df530041a7f4994ddf321219d88f5c8"
   end
 
   resource "zsh_completion" do
-    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.1.0-beta.2/_jaspr"
+    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.1.0-beta.3/_jaspr"
     sha256 "cd3f2f6a84c5b848b7d57f05155f76df131bd4df2cf5c571d0fb192a67c51e80"
   end
 
   resource "fish_completion" do
-    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.1.0-beta.2/jaspr.fish"
+    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.1.0-beta.3/jaspr.fish"
     sha256 "dbda0cb11281490b4b542e36354e4e91b679751af6bafb0f42236f8b907b2430"
   end
 
   resource "man_page" do
-    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.1.0-beta.2/jaspr.1"
+    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.1.0-beta.3/jaspr.1"
     sha256 "52a035df7a96d1ab468e85e5a1d60378dd3baa10fdbb9b58a2cc2e842729b876"
   end
 
