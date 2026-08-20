@@ -8,14 +8,14 @@ class JasprBeta < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.4.2-beta.1/jaspr-macos-arm64"
-      sha256 "81b84ef98409412df5f4a3e0d27c10f9a62a9a7bf429d853b51d29e4ee4bbb7e"
+      sha256 "8fe7033b89a7acb84df7b7c3bfa1fed2a08f542b8782f7d157663d0ab467a114"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.4.2-beta.1/jaspr-linux-amd64"
-      sha256 "693da620242d2dc6f0dedefa7bd19daf70a0ca8491efbf7bf8e17e8626f00f4e"
+      sha256 "4f99474d1bdb3ce24b1fed13b9a9e199540a405d7bf08464384a7150993e8ba0"
     end
   end
 
