@@ -1,42 +1,42 @@
 class JasprBeta < Formula
   desc "Stacked pull requests on GitHub"
   homepage "https://github.com/MichaelSims/git-jaspr"
-  version "2.5.0-beta.5"
+  version "2.5.0-beta.6"
   license "Apache-2.0"
   conflicts_with "jaspr", because: "both install the jaspr binary"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.5.0-beta.5/jaspr-macos-arm64"
-      sha256 "e43890eeba7d34408caffbae5692a366ad7085135d55e7ff1389d76ced42f991"
+      url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.5.0-beta.6/jaspr-macos-arm64"
+      sha256 "e3ee9ca8505f795d4c6ebacd5d14e0185f8261594fa78e380ba5d2236ec3acf6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.5.0-beta.5/jaspr-linux-amd64"
-      sha256 "b7d340cd1c8a2fb480f23b5d27ea87f02fd550b7fca2c34748d6f078f72cf102"
+      url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.5.0-beta.6/jaspr-linux-amd64"
+      sha256 "cf46126eb805b0a7b8ae6bf721a157fb7cffee74c59789caa3d4bbe1f161bfda"
     end
   end
 
   resource "bash_completion" do
-    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.5.0-beta.5/jaspr.bash"
+    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.5.0-beta.6/jaspr.bash"
     sha256 "206f691ab32bdbe9973fc8cf19f0ddf7e2cd0dcb0f57a8a35088c85b463d2a3a"
   end
 
   resource "zsh_completion" do
-    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.5.0-beta.5/_jaspr"
+    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.5.0-beta.6/_jaspr"
     sha256 "f87e88e6560a027e60619fcc23c43726c88b736fa6c353315e0ffd9de8d33661"
   end
 
   resource "fish_completion" do
-    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.5.0-beta.5/jaspr.fish"
+    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.5.0-beta.6/jaspr.fish"
     sha256 "a815983714d9d307b3e9e5e0b69b511eb8569e24afeeb995e3af935bab1ad01a"
   end
 
   resource "man_page" do
-    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.5.0-beta.5/jaspr.1"
-    sha256 "89da38e7c334ced453e666f267cfd4f1a3992ca9a54a749d2bf3c7f567090593"
+    url "https://github.com/MichaelSims/git-jaspr/releases/download/v2.5.0-beta.6/jaspr.1"
+    sha256 "1041b5c992f3c8e3a98c90a853a26540105988eb46df9a4702b905d957034b44"
   end
 
   def install
